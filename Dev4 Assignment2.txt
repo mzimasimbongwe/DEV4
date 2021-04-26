@@ -1,0 +1,134 @@
+NAME       : MZIMASI
+SURNAME    : MBONGWE
+STUDENT NO : 217291708
+
+JAVA CODE
+
+package DS4;
+import java.util.*;
+
+public class Parameter_Area {
+    
+    static int input_length(){
+        System.out.println("Enter the length of a rectangle:");
+        Scanner console = new Scanner(System.in);
+        int length = console.nextInt();
+        return length;
+    }
+    
+    static int input_width(){
+        System.out.println("Enter the width of a rectangle:");
+        Scanner console = new Scanner(System.in);
+        int width = console.nextInt();
+        return width;
+    }
+    
+    static int calc_area( int length, int width){
+        int area;
+         area = length * width;
+         return area;
+    }
+    
+    static int calc_perimeter(int lt, int wd){
+        int perimeter;
+        perimeter = (lt+wd) * 2;
+        return perimeter;
+    }
+    Public class NewMain{
+    public static void main(String[] args){
+        
+        int lt = input_length();
+        int wd = input_width();
+        int area = calc_area(lt, wd);
+        int perimeter = calc_perimeter(lt, wd);
+        System.out.println("The area of a rectangle is" +area);
+        System.out.println("The perimeter of a rectangle is" +perimeter);
+    }
+    
+}
+
+C#CODE
+
+namespace ConsoleApplication6
+{
+    class Program
+    {
+        static int input_length()
+        {
+            Console.WriteLine("Enter the length : ");
+            int length = Convert.ToInt32(Console.ReadLine());
+            return length;
+        }
+
+        static int input_width()
+        {
+            Console.WriteLine("Enter the width ");
+            int width = Convert.ToInt32(Console.ReadLine());
+            return width;
+        }
+        static int area(int lt, int wd)
+        {
+            int area;
+            area = lt * wd;
+            return area;
+        }
+
+        static int perimeter(int lt, int wd)
+        {
+            int perimeter;
+            perimeter =  (lt + wd) * 2;
+            return perimeter;
+        }
+
+
+        static void Main(string[] args)
+        {
+            int lt = input_length();
+            int wd = input_width();
+            int m = area(lt, wd);
+            int b = perimeter(l, w);
+       Console.WriteLine("The area is " + m);
+       Console.WriteLine("The perimeter is " + b);
+
+
+
+
+
+
+
+        }
+    }
+
+}
+
+PYTHON CODE
+
+def input_length():
+    length = int(input("Enter the length :"))
+    return length
+
+
+def input_width():
+    width = int(input("Enter the width :"))
+    return width
+
+
+def area(length, width):
+    area = length * width
+    return area
+
+
+def perimeter(length, width):
+    perimeter = 2 * (length + width)
+    return perimeter
+
+
+if __name__ == ' __main__':
+    length = input_length()
+    width = input_width()
+    area = area(length, width)
+    perimeter = perimeter(length, width)
+    print("The area is " + area)
+    print("The perimeter is " + perimeter)
+
+
