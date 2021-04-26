@@ -89,13 +89,6 @@ namespace ConsoleApplication6
             int b = perimeter(l, w);
        Console.WriteLine("The area is " + m);
        Console.WriteLine("The perimeter is " + b);
-
-
-
-
-
-
-
         }
     }
 
